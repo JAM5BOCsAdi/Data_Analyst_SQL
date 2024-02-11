@@ -5,9 +5,7 @@ GO
 -- Data Analyst Portfolio Project | Tableau Visualization | Project 2/4
 
 /*
-
-Queries used for Tableau Project
-
+	Queries used for Tableau Project
 */
 
 -- 1. 
