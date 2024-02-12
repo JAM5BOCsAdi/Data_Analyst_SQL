@@ -15,7 +15,7 @@ FROM CovidAnalysis..CovidDeaths
 --Where location like '%states%'
 WHERE continent IS NOT NULL
 --Group By date
-ORDER BY 1,2
+ORDER BY 1,2;
 
 -- Just a double check based off the data provided
 -- numbers are extremely close so we will keep them - The Second includes "International"  Location
@@ -40,7 +40,7 @@ FROM CovidAnalysis..CovidDeaths
 WHERE continent IS NULL 
 AND location NOT IN ('World', 'European Union', 'International')
 GROUP BY location
-ORDER BY TotalDeathCount DESC
+ORDER BY TotalDeathCount DESC;
 
 
 -- 3.
@@ -48,8 +48,9 @@ ORDER BY TotalDeathCount DESC
 SELECT location, population, MAX(total_cases) AS HighestInfectionCount,  MAX((total_cases/population))*100 AS PercentPopulationInfected
 FROM CovidAnalysis..CovidDeaths
 --Where location like '%states%'
+WHERE continent IS NOT NULL
 GROUP BY location, population
-ORDER BY PercentPopulationInfected DESC
+ORDER BY PercentPopulationInfected DESC;
 
 
 -- 4.
@@ -59,7 +60,7 @@ SELECT location, population, date, MAX(total_cases) AS HighestInfectionCount,  M
 FROM CovidAnalysis..CovidDeaths
 --Where location like '%states%'
 GROUP BY location, population, date
-ORDER BY PercentPopulationInfected DESC
+ORDER BY PercentPopulationInfected DESC;
 
 
 -- ********************* THIS PART IS FOR ANOTHER VIDEO END ********************* 
