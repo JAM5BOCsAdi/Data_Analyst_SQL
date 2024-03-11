@@ -10,6 +10,11 @@
 
 <h2>Images of Data Analyst SQL:</h2>
 
+| | |
+|:-------------------------:|:-------------------------:|
+|<img height="400 px" src=""> | <img height="400 px" src=""> |
+|<img height="400 px" src=""> | <img height="400 px" src=""> |
+|<img height="400 px" src=""> | <img height="400 px" src=""> |
 
 # Useful Websites to learn SQL
 
