@@ -1,3 +1,15 @@
+<h1>Data Analyst SQL</h1>
+
+<h2>Links for other Data Analyst Projects:</h2>
+
+<p>Data Analyst Projects: <a href="https://github.com/JAM5BOCsAdi/Data_Analyst_Projects">Click here</a></p>
+<p>Data Analyst Tableau: <a href="https://github.com/JAM5BOCsAdi/Data_Analyst_Tableau">Click here</a></p>
+<p>Tableau Public Profile: <a href="https://public.tableau.com/app/profile/adam.horvath6040/vizzes">Click here</a></p>
+<p>Data Analyst Excel: <a href="https://github.com/JAM5BOCsAdi/Data_Analyst_Excel">Click here</a></p>
+
+<h2>Images of Data Analyst SQL:</h2>
+
+
 # Useful Websites to learn SQL
 
 ### Microsoft SQL Server Management Studio (Official Documentation):
