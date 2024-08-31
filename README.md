@@ -1,6 +1,6 @@
 <h1>Data Analyst SQL</h1>
 
-<h2>Links for other Data Analyst Projects:</h2>
+<h2>Links for other Data Analyst Project(s):</h2>
 
 <p>Data Analyst Projects: <a href="https://github.com/JAM5BOCsAdi/Data_Analyst_Projects">Click here</a></p>
 <p>Data Analyst Python: <a href="https://github.com/JAM5BOCsAdi/Data_Analyst_Python">Click here</a></p>
@@ -10,11 +10,11 @@
 
 <h2>Images of Data Analyst SQL:</h2>
 
-| | |
-|:-------------------------:|:-------------------------:|
-|<img height="400 px" src=""> | <img height="400 px" src=""> |
-|<img height="400 px" src=""> | <img height="400 px" src=""> |
-|<img height="400 px" src=""> | <img height="400 px" src=""> |
+|                              |                              |
+| :--------------------------: | :--------------------------: |
+| <img height="400 px" src=""> | <img height="400 px" src=""> |
+| <img height="400 px" src=""> | <img height="400 px" src=""> |
+| <img height="400 px" src=""> | <img height="400 px" src=""> |
 
 # Useful Websites to learn SQL
 
