@@ -870,11 +870,11 @@ END;
 
 EXEC test2;
 
-
+SET STATISTICS TIME OFF -- Execution Time OFF or ON in the "Messages" window down below
 
 
 DROP PROCEDURE IF EXISTS Temp_Employee;
-GO;
+GO
 CREATE PROCEDURE Temp_Employee @JobTitle NVARCHAR(100)
 AS BEGIN
 
@@ -897,6 +897,7 @@ AS BEGIN
 	FROM #temp_Employee3;
 
 END;
+GO
 -- Recompile the stored procedure
 --EXEC sp_recompile 'Temp_Employee';
 
@@ -907,7 +908,7 @@ END;
 
 -- EXEC Temp_Employee; This time it says error, it needs a parameter
 EXEC Temp_Employee @JobTitle = 'Salesman';
-GO;
+GO
 
 -- ***************************************************************
 -- Advanced SQL Tutorial | Subqueries (In the SELECT, FROM and WHERE Statement)
