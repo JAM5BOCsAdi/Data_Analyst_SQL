@@ -5,6 +5,7 @@
 
                                            SQL WINDOW VALUE FUNCTIONS
 										      (11:56:08)
+
 					These functions let you reference and compare values from other rows 
 					in a result set without complex joins or subqueries, enabling advanced 
 					analysis on ordered data.
