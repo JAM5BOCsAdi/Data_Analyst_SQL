@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-			        DOC: 06_JOINS_and_SET.pdf
+			        DOC: 05_JOINS_and_SET.pdf
 					CONNECTION: SalesDB
 
 											  SQL SET OPERATORS

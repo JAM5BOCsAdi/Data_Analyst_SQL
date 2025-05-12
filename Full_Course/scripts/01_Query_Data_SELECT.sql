@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-							DOC: 02_Query_Data_SELECT.pdf
+							DOC: 01_Query_Data_SELECT.pdf
 							CONNECTION: MyDatabase
 
 													SQL SELECT Query

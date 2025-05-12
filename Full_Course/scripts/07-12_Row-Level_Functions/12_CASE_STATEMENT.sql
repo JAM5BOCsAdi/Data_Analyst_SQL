@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-			        DOC: 07_Row_Level_Functions.pdf
+			        DOC: 06_Row_Level_Functions.pdf
 					CONNECTION: SalesBD
 
                                            SQL CASE STATEMENT

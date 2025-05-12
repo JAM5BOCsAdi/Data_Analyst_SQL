@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-			        DOC: 08_Aggregation_Analytical_Functions.pdf
+			        DOC: 07_Aggregation_Analytical_Functions.pdf
 					CONNECTION: SalesBD
 
                                            SQL WINDOW FUNCTIONS BASICS

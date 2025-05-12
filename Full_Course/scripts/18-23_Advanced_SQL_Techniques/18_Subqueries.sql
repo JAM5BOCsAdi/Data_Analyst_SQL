@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-			        DOC: 09_Advanced_SQL_Techniques.pdf
+			        DOC: 08_Advanced_SQL_Techniques.pdf
 					CONNECTION: SalesBD
 
 										SQL SUBQUERY FUNCTIONS

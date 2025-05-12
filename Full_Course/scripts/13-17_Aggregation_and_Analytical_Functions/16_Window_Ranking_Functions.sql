@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-			        DOC: 08_Aggregation_Analytical_Functions.pdf
+			        DOC: 07_Aggregation_Analytical_Functions.pdf
 					CONNECTION: SalesBD
 
                                            SQL WINDOW RANKING FUNCTIONS
@@ -19,7 +19,7 @@
 						4. NTILE
 					2. PERCENTAGE-based Ranking (Distribution Analysis - Find Top 20% Products)
 						1. CUME_DIST
-						2. PERcENT_RANK
+						2. PERCENT_RANK
 			-----------------------------------------------------------------------------------------------
 */
 

@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-						DOC: 03_Data_Definition_DDL.pdf
+						DOC: 02_Data_Definition_DDL.pdf
 						CONNECTION: MyDatabase
 
 										SQL Data Definition Language (DDL)

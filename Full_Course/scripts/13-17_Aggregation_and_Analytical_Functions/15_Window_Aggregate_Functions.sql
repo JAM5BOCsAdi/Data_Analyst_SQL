@@ -1,6 +1,6 @@
 /*
             -----------------------------------------------------------------------------------------------
-			        DOC: 08_Aggregation_Analytical_Functions.pdf
+			        DOC: 07_Aggregation_Analytical_Functions.pdf
 					CONNECTION: SalesBD
 
                                            SQL WINDOW AGGREGATE FUNCTIONS
@@ -229,7 +229,7 @@ GO
 -- Aggregate all values from the beginning up to the curremt point without dropping off older data.
 
 -- ROLLING TOTAL: 
--- Aggregate all values within a fixeed time window (e.g. 30 days). As new data is added, the oldest data point will be dropped.
+-- Aggregate all values within a fixed time window (e.g. 30 days). As new data is added, the oldest data point will be dropped.
 
 -- Calculate the Running sum of Sales for each Product over time
 SELECT
