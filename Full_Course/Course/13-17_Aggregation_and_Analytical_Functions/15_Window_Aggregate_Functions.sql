@@ -226,7 +226,7 @@ GO
 			-----------------------------------------------------------------------------------------------
 */
 -- RUNNING TOTAL: 
--- Aggregate all values from the beginning up to the curremt point without dropping off older data.
+-- Aggregate all values from the beginning up to the current point without dropping off older data.
 
 -- ROLLING TOTAL: 
 -- Aggregate all values within a fixed time window (e.g. 30 days). As new data is added, the oldest data point will be dropped.
@@ -242,7 +242,7 @@ SELECT
 FROM Sales.Orders AS so;
 GO
 
--- Calculate the  Running sum of Sales for each Product over time, including only the next Order
+-- Calculate the  Rolling sum of Sales for each Product over time, including only the next Order
 SELECT
 	so.OrderID,
 	so.OrderDate,
@@ -254,7 +254,7 @@ SELECT
 FROM Sales.Orders AS so;
 GO
 
--- Calculate the moving average (= Running average) of Sales for each Product over time
+-- Calculate the Moving average (= Running average) of Sales for each Product over time
 SELECT
 	so.OrderID,
 	so.OrderDate,
@@ -265,7 +265,7 @@ SELECT
 FROM Sales.Orders AS so;
 GO
 
--- Calculate the moving average (= Running average) of Sales for each Product over time, including only the next Order
+-- Calculate the Rolling average of Sales for each Product over time, including only the next Order
 SELECT
 	so.OrderID,
 	so.OrderDate,

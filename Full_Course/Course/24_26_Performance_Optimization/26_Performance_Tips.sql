@@ -1,5 +1,6 @@
 /*
             ----------------------------------------------------------------------------------------------
+					DOC: 09_SQL_30_Performance_Tips.pdf
 					CONNECTION: SalesDB
 
 											 SQL PERFORMANCE TIPS

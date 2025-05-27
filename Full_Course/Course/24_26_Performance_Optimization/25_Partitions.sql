@@ -1,5 +1,6 @@
 /*
             ----------------------------------------------------------------------------------------------
+					DOC: 09_Performance_Optimization.pdf
 					CONNECTION: SalesDB
 
 											 SQL PARTITIONS
