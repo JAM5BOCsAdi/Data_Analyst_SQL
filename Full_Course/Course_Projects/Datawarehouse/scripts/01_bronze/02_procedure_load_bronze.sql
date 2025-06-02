@@ -33,8 +33,8 @@ BEGIN
 
 		SET @batch_start_time = GETDATE();
 
-		PRINT '>> Truncating Table: bronze.crm_cust_info';
 		SET @start_time = GETDATE();
+		PRINT '>> Truncating Table: bronze.crm_cust_info';
 		TRUNCATE TABLE bronze.crm_cust_info;
 
 		PRINT '>> Inserting Data Into: bronze.crm_cust_info';
@@ -88,7 +88,6 @@ BEGIN
 		)
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(millisecond, @start_time, @end_time) AS NVARCHAR) + ' millisecond(s)';
-		PRINT '______________';
 
 
 
@@ -152,7 +151,6 @@ BEGIN
 		)
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(millisecond, @start_time, @end_time) AS NVARCHAR) + ' millisecond(s)';
-		PRINT '______________';
 
 
 		SET @batch_end_time = GETDATE();
