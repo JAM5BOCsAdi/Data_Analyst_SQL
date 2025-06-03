@@ -12,12 +12,14 @@
 USE master;
 GO
 
+-- You can use
 -- Create Database 'DataWarehouse'
-IF NOT EXISTS(
-	SELECT 1
-	FROM sys.databases AS d
-	WHERE d.name = 'DataWarehouse'
-)
+--IF NOT EXISTS(
+--	SELECT 1
+--	FROM sys.databases AS d
+--	WHERE d.name = 'DataWarehouse'
+--)
+IF DB_ID('DataWarehouse') IS NULL 
 	BEGIN
 		BEGIN TRY
 			CREATE DATABASE DataWarehouse;

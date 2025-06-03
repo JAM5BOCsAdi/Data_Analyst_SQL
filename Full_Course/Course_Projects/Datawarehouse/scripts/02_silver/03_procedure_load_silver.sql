@@ -86,7 +86,7 @@ BEGIN
 			WHERE cst_id IS NOT NULL
 			-- WHERE cst_id = 29466
 		) AS sub
-		WHERE	sub.flag_last = 1;
+		WHERE sub.flag_last = 1;
 		
 		SET @end_time = GETDATE();
 		PRINT '>> Load Duration: ' + CAST(DATEDIFF(millisecond, @start_time, @end_time) AS NVARCHAR) + ' millisecond(s)';

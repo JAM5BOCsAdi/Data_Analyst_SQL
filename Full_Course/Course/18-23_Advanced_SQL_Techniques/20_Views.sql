@@ -106,7 +106,7 @@ FROM cte_MonthlySummary AS cte_ms;
 GO
 
 -- Change to view: 
-CREATE OR ALTER VIEW vw_MonthlySummary AS (
+CREATE OR ALTER VIEW vw_MonthlySummary AS 
 	SELECT
 		DATETRUNC(month, so.OrderDate) AS OrderMonth,
 		SUM(so.Sales) AS TotalSales,
@@ -114,8 +114,22 @@ CREATE OR ALTER VIEW vw_MonthlySummary AS (
 		SUM(so.Quantity) AS TotalQuantity
 	FROM Sales.Orders AS so
 	GROUP BY DATETRUNC(month, so.OrderDate)
-);
+;
 GO
+-- You can use parentheses in 2 way:
+-- 1. Before AS: Columns that you want to show
+-- 2. After AS: It is not reconmended, because in other T-sql environments it can cause problems.
+--				Only goof for syntax, to understand easier the begin and end
+--CREATE OR ALTER VIEW vw_MonthlySummary (OrderMonth, TotalSales, TotalOrders, Quantity) AS( 
+--	SELECT
+--		DATETRUNC(month, so.OrderDate) AS OrderMonth,
+--		SUM(so.Sales) AS TotalSales,
+--		COUNT(so.OrderID) AS TotalOrders,
+--		SUM(so.Quantity) AS TotalQuantity
+--	FROM Sales.Orders AS so
+--	GROUP BY DATETRUNC(month, so.OrderDate)
+--);
+--GO
 
 -- to ADD to the SCHEMA write "Sales."
 DROP VIEW IF EXISTS Sales.vw_MonthlySummary;
@@ -129,7 +143,7 @@ IF OBJECT_ID('Sales.vw_MonthlySummary', 'V') IS NOT NULL
 DROP VIEW Sales.vw_MonthlySummary;
 GO
 
-CREATE OR ALTER VIEW Sales.vw_MonthlySummary AS (
+CREATE OR ALTER VIEW Sales.vw_MonthlySummary AS 
 	SELECT
 		DATETRUNC(month, so.OrderDate) AS OrderMonth,
 		SUM(so.Sales) AS TotalSales,
@@ -137,7 +151,7 @@ CREATE OR ALTER VIEW Sales.vw_MonthlySummary AS (
 		SUM(so.Quantity) AS TotalQuantity
 	FROM Sales.Orders AS so
 	GROUP BY DATETRUNC(month, so.OrderDate)
-);
+;
 GO
 
 -- Check if it is good
@@ -167,7 +181,7 @@ GO
 -- friendly and easy-to-consume objects.
 
 -- Provide a view that combines details from orders, products, customers and employees.
-CREATE OR ALTER VIEW Sales.vw_OrderDetails AS (
+CREATE OR ALTER VIEW Sales.vw_OrderDetails AS 
 	SELECT 
 		so.OrderID,
 		so.OrderDate,
@@ -186,7 +200,7 @@ CREATE OR ALTER VIEW Sales.vw_OrderDetails AS (
 		ON so.CustomerID = sc.CustomerID
 	LEFT JOIN Sales.Employees AS se
 		ON so.SalesPersonID = se.EmployeeID
-);
+;
 GO
 
 SELECT *
@@ -203,7 +217,7 @@ GO
 
 -- Provide a VIEW for EU Sales Team, that combines details from All tables
 -- but EXCLUDES data related to the USA
-CREATE OR ALTER VIEW Sales.vw_OrderDetailsEU AS (
+CREATE OR ALTER VIEW Sales.vw_OrderDetailsEU AS 
 	SELECT 
 			so.OrderID,
 			so.OrderDate,
@@ -223,7 +237,7 @@ CREATE OR ALTER VIEW Sales.vw_OrderDetailsEU AS (
 	LEFT JOIN Sales.Employees AS se
 		ON so.SalesPersonID = se.EmployeeID
 	WHERE sc.Country != 'USA' -- != and <> can be used, it is the SAME and both works
-); 
+; 
 GO
 
 SELECT *

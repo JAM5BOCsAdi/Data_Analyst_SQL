@@ -41,6 +41,20 @@ CREATE TABLE silver.crm_cust_info(
 													-- https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver17
 );
 GO
+-- Shortest form:
+--DROP TABLE IF EXISTS silver.crm_cust_info;
+--CREATE TABLE silver.crm_cust_info(
+--	cst_id				INT,
+--	cst_key				NVARCHAR(50),
+--	cst_firstname		NVARCHAR(50),
+--	cst_lastname		NVARCHAR(50),
+--	cst_marital_status	NVARCHAR(50),
+--	cst_gndr			NVARCHAR(50),
+--	cst_create_date		DATE,
+--	dwh_create_date		DATETIME2 DEFAULT GETDATE() -- <-- It will get the current date by default (automatically)
+--													-- https://learn.microsoft.com/en-us/sql/t-sql/statements/create-table-transact-sql?view=sql-server-ver17
+--);
+--GO
 
 -- Long form:
 --IF OBJECT_ID('silver.crm_cust_info', 'U') IS NOT NULL
