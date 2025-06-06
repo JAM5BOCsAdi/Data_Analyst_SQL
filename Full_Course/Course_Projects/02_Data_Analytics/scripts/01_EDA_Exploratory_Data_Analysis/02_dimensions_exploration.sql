@@ -5,6 +5,12 @@
 
 											 Exploratory Data Analysis - EDA
 										      (1:03:41:50)
+
+					"Understand Data":
+					- Basic Queries
+					- Data Profiling
+					- Simple Aggregations
+					- Subquery
 			-----------------------------------------------------------------------------------------------
 */
 

@@ -1,3 +1,21 @@
+/*
+            ----------------------------------------------------------------------------------------------
+					DOC: 11_SQL_Projects.pdf
+					CONNECTION: DataWarehouse
+
+											 DataWarehouse
+										      (23:21:04)
+
+					"Organize, Structure, Prepare":
+					- ETL/ELT Processing
+					- Data Architecture
+					- Data Integration
+					- Data Cleansing
+					- Data Load
+					- Data Modeling
+			-----------------------------------------------------------------------------------------------
+*/
+
 USE DataWarehouse;
 GO
 
